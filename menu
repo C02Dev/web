@@ -1,0 +1,18 @@
+<?php
+class XenForo_ragtekTab
+{
+  /**
+    * add the "info" tab to the navbar
+    * @param array $extraTabs
+    * @param string $selectedTabId
+    */
+    public static function addNavbarTab(array &$extraTabs, $selectedTabId)
+    {
+        $extraTabs['info'] = array(
+            'title' => new XenForo_Phrase('ragtek_infopage_navbartitle'),//phrase with the title for the link
+            'href'  => XenForo_Link::buildPublicLink('info'),
+            'linksTemplate' => 'ragtek_infopage_navbar',      //if you want to have a "sub menu" you can create a template for this
+            'position'  =>  'middle'  //since beta 5, you can choose the position, where the link should be placed      possible positions: [SIZE=3][FONT=Arial]middle end home[/FONT][/SIZE]
+        );
+    }
+}
