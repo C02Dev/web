@@ -1,0 +1,9 @@
+<span class="label label-danger">Owner</span>
+<span class="label label-danger">Administrator</span> //same for alt grp
+<span class="label label-warning">Senior Moderator</span>
+<span class="label label-warning">Moderator</span>
+<span class="label label-warning">Junior Moderator</span>
+<span class="label label-success">Build Team</span> //change to green
+<span class="label label-warning">Poseidon</span> //find diff yellow?
+<span class="label label-success">Zeus</span>
+<span class="label label-primary">Athena</span>
