@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Server status for the Playcade community">
+    <meta name="author" content="Playcade">
+		
+	<title>Play &bull; Playcade</title><link href="/styles/themes/Darkly/css/bootstrap.min.css" rel="stylesheet">
+<link href="/styles/themes/Darkly/css/custom.css" rel="stylesheet">
+<link href="/styles/themes/Darkly/css/font-awesome.min.css" rel="stylesheet">
+<link href="/core/assets/css/toastr.css" rel="stylesheet">
+<link href="/core/assets/css/custom_core.css" rel="stylesheet">
+<link rel="icon" href="/core/assets/favicon.ico">	
+	<!-- Custom style -->
+	<style>
+	html {
+		overflow-y: scroll;
+	}
+	</style>
+	
+  </head>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar_collapse">
+	  <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="/">Playcade</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="main_navbar_collapse">
+	<ul class="nav navbar-nav"><li><a href="/">Home</a></li><li><a href="/forum">Forum</a></li><li class="active"><a href="/play">Play</a></li><li><a href="/store/"> Store</a></li><li><a href="/discord/"> Discord </a></li></ul>
+	<ul class="nav navbar-nav navbar-right">
+	  
+	  
+	<li class="dropdown alert-dropdown">
+	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="margin: -10px 0px; font-size: 16px;"><i class="fa fa-envelope"></i> <div style="display: inline;" id="pms"></div></span></a>
+	  <ul class="dropdown-menu"><li><a href="#">No messages</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="/user/messaging">View Messages</a></li>
+	  </ul>
+	</li>	
+	
+	<li class="dropdown alert-dropdown">
+	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="margin: -10px 0px; font-size: 16px;"><i class="fa fa-flag"></i> <div style="display: inline;" id="alerts"></div></span></a>
+	  <ul class="dropdown-menu"><li><a href="#">No alerts</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="/user/alerts">View Alerts</a></li>
+	  </ul>
+	</li>
+	
+	<li class="dropdown">
+	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-rounded" style="margin: -10px 0px; width:25px; height:25px;" src="https://cravatar.eu/helmavatar/_C02/25.png" />&nbsp;&nbsp;_C02 <span class="caret"></span></a>
+	  <ul class="dropdown-menu" role="menu">
+		<li><a href="/profile/_C02">Profile</a></li>
+		<li class="divider"></li>
+		<li><a href="/user">UserCP</a></li><li><a href="/mod">ModCP</a></li><li><a href="/admin">AdminCP</a></li><li class="divider"></li>
+		<li><a href="/signout">Sign Out</a></li>
+	  </ul>
+	</li>
+	</ul>
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+
+<br />
+
+
+  <div class="container">
+      <div class="alert alert-info" id="1">
+	  	  <p>This website is new! Please report any bugs to a Staff Member.</p>
+
+	</div>
+    </div>
+<div class="container">
+  <div class="alert alert-info"><center>Connect to the server with the IP playcade.ml</center></div>
+  <div class="row">
+    <div class="col-md-3">
+	  <div class="well">
+	    <table class="table">
+		  <tr class="success">
+			<td><b>Status:</b></td>
+			<td>Online</td>
+		  </tr>
+		  <tr>
+		    <td><b>Players Online:</b></td>
+			<td>3 / 500</td>
+		  </tr>
+		  <tr>
+		    <td><b>Queried In:</b></td>
+			<td>0.0012s</td>
+		  </tr>
+		</table>
+	  </div>
+	</div>
+	<div class="col-md-9">
+	  <div class="well">
+	    <h3>Players Online</h3>
+	    <h4>Playcade</h4><div class="alert alert-warning">There are 3 players online.</div><hr><h4>Lobby</h4><div class="alert alert-warning">There are no players online!</div><hr><h4>Skyblock</h4><span rel="tooltip" data-trigger="hover" data-original-title="RussiSh"><a href="/profile/RussiSh"><img src="https://cravatar.eu/avatar/RussiSh/50.png" style="width: 40px; height: 40px; margin-bottom: 5px; margin-left: 5px; border-radius: 3px;" /></a></span>&nbsp;<span rel="tooltip" data-trigger="hover" data-original-title="Cilantro33"><a href="/profile/Cilantro33"><img src="https://cravatar.eu/avatar/Cilantro33/50.png" style="width: 40px; height: 40px; margin-bottom: 5px; margin-left: 5px; border-radius: 3px;" /></a></span>&nbsp;<span rel="tooltip" data-trigger="hover" data-original-title="Ceboo"><a href="/profile/Ceboo"><img src="https://cravatar.eu/avatar/Ceboo/50.png" style="width: 40px; height: 40px; margin-bottom: 5px; margin-left: 5px; border-radius: 3px;" /></a></span>&nbsp;<hr><h4>Creative</h4><div class="alert alert-warning">There are no players online!</div><hr><h4>Skywars</h4><div class="alert alert-warning">There are no players online!</div><hr>
+	  </div>
+	</div>
+  </div>
+</div><footer>
+  <div class="container">
+    <hr>
+    <a href="https://twitter.com/PlayCadeMC"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+    <span class="pull-right">
+      
+<ul class="nav nav-pills dropup">
+    <li><a data-toggle="tooltip" id="page_load_tooltip" title="Page loading.."><i class="fa fa-tachometer fa-fw"></i></a></li><li><a href="/help/"> Help</a></li><li><a href="/rules"> Rules</a></li>
+	<li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">&copy; Playcade 2017</a>
+		<ul class="dropdown-menu">
+			<li><a href="#" target="_blank">Site software &copy; Samerton</a></li>
+			<li><a href="https://github.com/NamelessMC/Nameless" target="_blank">Source avaliable on GitHub.</a></li>
+		</ul>
+	</li>
+	</ul>
+    </span>
+  </div>
+</footer><script src="/core/assets/js/jquery.min.js"></script>
+	<script src="/styles/themes/Darkly/js/bootstrap.min.js"></script>
+	<script src="/core/assets/js/jquery.cookie.js"></script>
+	<script src="/core/assets/js/toastr.js"></script>
+	<script type="text/javascript">
+	jQuery(function( $ ){
+				
+		// Announcements
+		$("div[class*='alert-announcement-']").each(function() {
+			var id = this.id;
+			
+			// Check if cookie alert has been closed
+			if( $.cookie('announcement-' + this.id) === 'closed' ){
+
+				$(this).hide();
+
+			}
+
+			// Grab your button (based on your posted html)
+			$('.close-announcement').click(function( e ){
+
+				// Do not perform default action when button is clicked
+				e.preventDefault();
+				
+				/* If you just want the cookie for a session don't provide an expires
+				 Set the path as root, so the cookie will be valid across the whole site */
+				$.cookie('announcement-' + id, 'closed', { path: '/' });
+
+			});
+		});
+
+	});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		toastr.options.closeButton = true;
+		toastr.options.timeOut = 0;
+		toastr.options.positionClass = 'toast-bottom-left';
+		
+		// Get alerts and messages, and then set them to refresh every 20 seconds
+		$.getJSON('/core/queries/private_messages.php?uid=1', function(data) {
+			if(data.value > 0 && $('#pms').is(':empty')){
+				$("#pms").html(' <i class="fa fa-exclamation-circle custom-nav-exclaim"></i>');
+			}
+		});
+		$.getJSON('/core/queries/alerts.php?uid=1', function(data) {
+			if(data.value > 0 && $('#alerts').is(':empty')){
+				$("#alerts").html(' <i class="fa fa-exclamation-circle custom-nav-exclaim"></i>');
+			}
+		});
+		
+		window.setInterval(function(){
+		  $.getJSON('/core/queries/private_messages.php?uid=1', function(data) {
+			if(data.value > 0 && $('#pms').is(':empty')){
+				$("#pms").html(' <i class="fa fa-exclamation-circle custom-nav-exclaim"></i>');
+				toastr.info('You have ' + data.value + ' new messages');
+			}
+		  });
+		  $.getJSON('/core/queries/alerts.php?uid=1', function(data) {
+			if(data.value > 0 && $('#alerts').is(':empty')){
+				$("#alerts").html(' <i class="fa fa-exclamation-circle custom-nav-exclaim"></i>');
+				toastr.info('You have ' + data.value + ' new alerts');
+			}
+		  });
+		}, 20000);
+	});
+		// popovers
+	$(function () { $("[data-toggle='popover']").popover({trigger: 'hover', placement: 'top'}); });
+	// tooltips
+	$(document).ready(function(){
+		$("[rel=tooltip]").tooltip({ placement: 'top'});
+	});
+		var timer = 'Page loaded in 0.074s';
+	$('#page_load_tooltip').attr('title', timer).tooltip('fixTitle');
+	
+    $(function() {
+        $(".alert-dropdown").hover(
+            function(){ $(this).addClass('open') },
+            function(){ $(this).removeClass('open') }
+        );
+    });	
+	</script>  </body>
+</html>
